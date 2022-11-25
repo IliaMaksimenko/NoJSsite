@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <span>hereIsTheLogo</span>
+    </div>
+    <div id="menu">
+        <a href="#" title="aboutUs" onclick="slowScroll('#about')">О нас</a>
+        <a href="#" title="projects" onclick="slowScroll('#projects')">Наши проекты</a>
+        <a href="#" title="price" onclick="slowScroll('#price')">Цены и услуги</a>
+        <a href="#" title="contacts" onclick="slowScroll('#contacts')">Контакты</a>
+        <a href="#" title="faq" onclick="slowScroll('#faq')">Вопросы и Ответы</a>
+    </div>
+</header>
+
+<div id="top">
+    <h1>Мощный заголовок</h1>
+    <h3>и не менее мощный подзаголовок</h3>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+    function slowScroll(id){
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+    }
+
+    $(document).on('scroll', function () {
+        if($(window).scrollTop() === 0){
+            $('header').removeClass('fixed');
+        }else {
+            $('header').attr('class','fixed');
+        }
+    })
+</script>
+</body>
+</html>

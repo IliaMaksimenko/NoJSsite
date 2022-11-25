@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;700;800;900&family=Suez+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #000;
+    font-family: Trebuchet MS, Helvetica, serif;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 10px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: #fff;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    font-family: 'Suez One', serif;
+}
+
+@media (min-width: 1001px) {
+    #logo {
+        margin-left: 40px;
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+
+    #menu {
+        float: right;
+        width: 57%;
+    }
+
+    #menu > a:not(:last-child) {
+        margin-right: 7%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #logo {
+        text-align: center;
+        margin-top: 15px;
+        float: none;
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    #menu {
+        float: left;
+        width: 100%;
+    }
+
+    #menu > a:not(:last-child) {
+        margin-right: 5%;
+    }
+
+    #top{
+        padding-top: 20%;
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 771px) and (max-width: 1220px){
+    #menu > a:not(:last-child) {
+        width: auto;
+        margin-right: 2%;
+    }
+}
+
+#menu {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+}
+
+#menu > a {
+    color: #fff;
+    text-decoration: none;
+    vertical-align: sub;
+}
+
+#menu > a:hover {
+    color: #b0b0b0
+}
+
+.fixed{
+    z-index: 5000;
+    background-color: rgba(255, 253, 253, 0.85);
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: black;
+}
+
+.fixed #menu a {
+    color: black;
+}
+.fixed #menu a:hover {
+    color: #888686;
+}
+
+#top{
+    width: 100%;
+    height: 1000px;
+    background-image: url("https://pentaschool.ru/upload_2/Depositphotos_203821508_s-2019-min.jpg");
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    font-family: Roboto Slab, serif;
+}
+
+#top h1{
+    padding-top: 20%;
+}
+
+#top h3{
+    color: #ccc;
+}
