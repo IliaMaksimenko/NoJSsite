@@ -1,0 +1,37 @@
+#about{
+    background-color: #000;
+    width: 100%;
+}
+
+.contentAbout{
+    width: 80%;
+    padding: 0 10%;
+}
+#about h2 {
+    font-size: 3em;
+    font-family: Roboto Slab, serif;
+    padding: 60px 0 60px 0;
+    color: white;
+}
+
+#about h4 {
+    font-size: 2em;
+    font-family: Roboto Slab, serif;
+    padding: 60px 0 60px 0;
+    color: white;
+}
+
+.design {
+    position: relative;
+
+    float: right;
+    text-align: right;
+}
+
+.dev {
+    position: relative;
+
+    margin: 0 0 0 auto;
+    float: right;
+    text-align: left;
+}
