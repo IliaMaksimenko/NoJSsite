@@ -6,6 +6,7 @@ header {
     float: left;
     position: fixed;
     transition: 0.5s ease 0s;
+    z-index: 400;
 }
 
 header .content{
